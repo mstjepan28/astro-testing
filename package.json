@@ -8,8 +8,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "biome": "biome check **/*.{tsx,ts,jsx,json}",
-    "biome:fix": "biome check --apply **/*.{tsx,ts,jsx,json}"
+    "biome": "biome check ./src/**/*.astro",
+    "biome:fix": "biome check --apply ./src/**/*.astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.4",

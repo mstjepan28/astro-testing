@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "biome": "biome check **/*.{tsx,ts,jsx,json}",
+    "biome:fix": "biome check --apply **/*.{tsx,ts,jsx,json}"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.4",
@@ -15,6 +17,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.5.3",
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1"
